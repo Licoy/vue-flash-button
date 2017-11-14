@@ -28,5 +28,5 @@ Vue.use(FlashButton)
 
 <flash-button type="error" size="small">small</flash-button>
 ```
-# Listen
+# License
 MIT
