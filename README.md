@@ -1,5 +1,6 @@
 ## 介绍
 vue-flash-button - vue闪光按钮
+<img src="./imgs/flash-button.png" align=center />
 
 ## 使用方法
 ### 添加组件
