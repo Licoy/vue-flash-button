@@ -1,13 +1,28 @@
 <template>
-  <div class="flash-button-container">
-      <button :class="'flash-btn-'+color"><slot></slot></button>
-  </div>
+  <button :class="'flash-btn-'+type+' flash-btn-size-'+size"><slot></slot></button>
 </template>
 <script>
+    function oneOf (value, validList) {
+        for (let i = 0; i < validList.length; i++) {
+            if (value === validList[i]) {
+                return true;
+            }
+        }
+        return false;
+    }
     export default{
         props:{
-            color:{
-                default:'primary'
+            type:{
+                default:'primary',
+                validator(value){
+                    return oneOf(value,['primary','error','success','warning'])
+                }
+            },
+            size:{
+                default:'default',
+                validator(value){
+                    return oneOf(value,['large','default','small'])
+                }
             }
         },
         data(){
@@ -21,14 +36,13 @@
     text-indent: 0;
     position: relative;
     color: #fff;
-    padding: 0 10px 0 10px;
-    min-width: 160px;
-    height: 38px;
-    line-height: 38px;
+    padding: 7px 15px;
+    border-radius: 4px;
+    height: 32px;
     opacity: .8;
     text-align: center;
     font-family: Ubuntu,sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     text-decoration: none;
     border-radius: 2px;
     overflow: hidden;
@@ -74,5 +88,15 @@
 
 .flash-btn-success {
 	background: #096
+}
+
+.flash-btn-size-large{
+    height: 36px;
+    font-size: 15px;
+}
+.flash-btn-size-small{
+    height: 24px;
+    font-size: 12px;
+    padding: 2px 7px;
 }
 </style>

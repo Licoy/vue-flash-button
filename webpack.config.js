@@ -6,7 +6,9 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'flash-button.js'
+    filename: 'flash-button.js',
+    library: 'FlashButton',
+    libraryTarget: 'umd'
   },
   module: {
     rules: [
