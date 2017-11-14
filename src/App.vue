@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-      <sg-button>2222</sg-button>
+      <flash-button>2222</flash-button>
   </div>
 </template>
 

@@ -1,11 +1,12 @@
 {
-  "name": "sg-button",
+  "name": "flash-button",
   "description": "flash button",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "author": "licoy <licoycn@gmail.com>",
   "license": "MIT",
   "private": false,
-  "main": "dist/sg-button.js",
+  "main": "dist/flash-button.js",
+  "homepage": "https://www.licoy.cn",
   "repository": { "type": "git", "url": "https://github.com/Licoy/vue-flash-button" },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",

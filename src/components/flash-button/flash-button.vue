@@ -1,6 +1,6 @@
 <template>
-  <div class="sg-button-container">
-      <button :class="'sgbtn_'+color"><slot></slot></button>
+  <div class="flash-button-container">
+      <button :class="'flash-btn-'+color"><slot></slot></button>
   </div>
 </template>
 <script>
@@ -16,7 +16,7 @@
     }
 </script>
 <style scoped>
-[class*=sgbtn] {
+[class*=flash-btn-] {
     display: inline-block;
     text-indent: 0;
     position: relative;
@@ -36,7 +36,7 @@
     transition: all .15s ease-in;
     border:none
 }
-[class*=sgbtn]:before {
+[class*=flash-btn-]:before {
 	content: '';
 	position: absolute;
 	background: #fff;
@@ -50,29 +50,29 @@
 	-webkit-transform: skewX(-25deg);
 	transform: skewX(-25deg)
 }
-[class*=sgbtn]:hover {
+[class*=flash-btn-]:hover {
 	opacity: .65;
     color: #fff;
     cursor: pointer;
 }
-[class*=sgbtn]:hover:before {
+[class*=flash-btn-]:hover:before {
 	width: 45px;
 	left: 205px
 }
 
-.sgbtn_primary {
+.flash-btn-primary {
 	background: #1cb2f5
 }
 
-.sgbtn_error {
+.flash-btn-error {
 	background: #C00
 }
 
-.sgbtn_warning {
+.flash-btn-warning {
 	background: #F90
 }
 
-.sgbtn_success {
+.flash-btn-success {
 	background: #096
 }
 </style>

@@ -2,11 +2,11 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './src/components/sg-button/index.js',
+  entry: './src/components/flash-button/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'sg-button.js'
+    filename: 'flash-button.js'
   },
   module: {
     rules: [

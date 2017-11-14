@@ -1,6 +1,6 @@
-import SgButton from './sg-button.vue';
+import FlashButton from './flash-button.vue';
 
-const component = { SgButton }
+const component = { FlashButton }
 
 const install = function(Vue, opts = {}) {
 
