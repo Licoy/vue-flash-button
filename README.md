@@ -14,16 +14,19 @@ yarn add flash-button
 `
 
 ### 引入
-`
+```
 import FlashButton from 'flash-button'
 
 Vue.use(FlashButton)
-`
+```
+
 ### 使用
-`
+```
 <flash-button type="success" size="large">large</flash-button>
+
 <flash-button type="primary" size="default">default</flash-button>
+
 <flash-button type="error" size="small">small</flash-button>
-`
+```
 # Listen
 MIT
