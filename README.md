@@ -1,5 +1,7 @@
 ## 介绍
 vue-flash-button - vue闪光按钮
+
+[![npm](https://img.shields.io/npm/v/npm.svg?style=plastic)]()
 <img src="./imgs/flash-button.png" align=center />
 
 ## 使用方法
