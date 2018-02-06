@@ -3,7 +3,7 @@ vue-flash-button - vue闪光按钮
 
 [![npm](https://img.shields.io/npm/v/npm.svg?style=plastic)]()
 <img src="./imgs/flash-button.png" align=center />
-
+https://www.npmjs.com/package/flash-button
 ## 使用方法
 ### 添加组件
 #### npm
